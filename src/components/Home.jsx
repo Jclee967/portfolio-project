@@ -16,7 +16,7 @@ const Home = () => {
           <p className=" text-gray-500 py-4 max-w-md">
             I have 4 years of experience building and designing software.
             Currently, I love to work on web application using technologies like
-            React, Tailwind and NodeJS.
+            Vue.js, Tailwind and Spring Boot.
           </p>
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">

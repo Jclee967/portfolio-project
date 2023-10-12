@@ -1,6 +1,19 @@
 import React from "react";
+import markdownPreview from "../assets/markdown-previewer.png";
 
 const Portfolio = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  };
+
+  const portfolios = [
+    {
+      id: 1,
+      src: markdownPreview,
+      demoUrl: "https://starlit-lokum-f2efed.netlify.app/",
+      codeUrl: "https://github.com/Jclee967/markdown-previewer",
+    },
+  ];
   return (
     <div
       name="portfolio"
@@ -15,11 +28,42 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8-px-12 sm:px-0">
-          <div>
-            <div>
-              <button></button>
+          {portfolios.map(({ id, src, demoUrl, codeUrl }) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+              <img
+                src={src}
+                alt=""
+                className="rounded-md duration-200 hover:scale-105"
+              />
+              <div className="flex items-center justify-center">
+                {demoUrl === "" ? (
+                  <button className="w-1/2 px-6 py-3 m-4 opacity-50" disabled>
+                    Demo
+                  </button>
+                ) : (
+                  <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                    onClick={() => openInNewTab(demoUrl)}
+                  >
+                    Demo
+                  </button>
+                )}
+
+                {codeUrl === "" ? (
+                  <button className="w-1/2 px-6 py-3 m-4 opacity-50" disabled>
+                    Code
+                  </button>
+                ) : (
+                  <button
+                    className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                    onClick={() => openInNewTab(codeUrl)}
+                  >
+                    Code
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

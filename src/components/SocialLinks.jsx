@@ -12,7 +12,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/hei-yuet-lee-2729b4181/",
       style: "rounded-tr-md",
     },
     {
@@ -22,7 +22,7 @@ const SocialLinks = () => {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com",
+      href: "https://github.com/Jclee967",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:jessicalee936@gmail.com",
     },
     {
       id: 4,
