@@ -2,44 +2,50 @@ import React from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import {
   BiLogoSpringBoot,
-  BiLogoReact,
+  BiLogoVuejs,
   BiLogoJavascript,
   BiLogoNodejs,
+  BiLogoDocker,
 } from "react-icons/bi";
 
 const Skills = () => {
   const techs = [
     {
       id: 1,
+      tag: <BiLogoSpringBoot key={4} size={100} className="mx-auto" />,
+      name: "Spring Boot",
+    },
+    {
+      id: 2,
+      tag: <BiLogoVuejs key={3} size={100} className="mx-auto" />,
+      name: "Vue.js",
+    },
+    {
+      id: 3,
       tag: <AiFillHtml5 key={1} size={100} className="mx-auto" />,
       name: "HTML",
     },
     {
-      id: 2,
+      id: 4,
       tag: <BiLogoJavascript key={2} size={100} className="mx-auto" />,
       name: "Javascript",
     },
     {
-      id: 3,
-      tag: <BiLogoReact key={3} size={100} className="mx-auto" />,
-      name: "React",
-    },
-    {
-      id: 4,
+      id: 5,
       tag: <BiLogoNodejs key={4} size={100} className="mx-auto" />,
       name: "Node.js",
     },
     {
-      id: 5,
-      tag: <BiLogoSpringBoot key={4} size={100} className="mx-auto" />,
-      name: "Spring Boot",
+      id: 6,
+      tag: <BiLogoDocker key={4} size={100} className="mx-auto" />,
+      name: "Docker",
     },
   ];
 
   return (
     <div
       name="skills"
-      className=" w-full h-screen bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className=" w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white md:h-screen"
     >
       <div className=" max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>

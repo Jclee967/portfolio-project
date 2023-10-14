@@ -1,5 +1,8 @@
 import React from "react";
 import markdownPreview from "../assets/markdown-previewer.png";
+import vueMap from "../assets/vue-map.png";
+import portfolioSite from "../assets/portfolio-site.png";
+import drowsDetection from "../assets/drows-detection.png";
 
 const Portfolio = () => {
   const openInNewTab = (url) => {
@@ -8,10 +11,28 @@ const Portfolio = () => {
 
   const portfolios = [
     {
-      id: 1,
+      id: 4,
+      src: portfolioSite,
+      demoUrl: "",
+      codeUrl: "https://github.com/Jclee967/portfolio-project",
+    },
+    {
+      id: 3,
+      src: vueMap,
+      demoUrl: "",
+      codeUrl: "https://github.com/Jclee967/vue-map-app",
+    },
+    {
+      id: 2,
       src: markdownPreview,
       demoUrl: "https://starlit-lokum-f2efed.netlify.app/",
       codeUrl: "https://github.com/Jclee967/markdown-previewer",
+    },
+    {
+      id: 1,
+      src: drowsDetection,
+      demoUrl: "",
+      codeUrl: "https://github.com/Jclee967/Yolov8-Object-Detection-on-Browser",
     },
   ];
   return (
@@ -27,13 +48,13 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8-px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, demoUrl, codeUrl }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="aspect-video rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
                 {demoUrl === "" ? (

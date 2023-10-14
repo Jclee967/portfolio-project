@@ -12,24 +12,32 @@ const About = () => {
             About
           </p>
         </div>
-        <p className=" text-xl mt-20">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A nam et
-          dolorum quam impedit. Animi dignissimos beatae, labore ipsum ratione a
-          ad quos sapiente, quidem quibusdam hic natus reprehenderit facilis
-          vero cupiditate quaerat expedita culpa velit ipsam quisquam, illo ex
-          accusamus modi? Distinctio commodi repellendus ratione sed provident
-          odit nesciunt.
+        <p className=" text-xl mt-20 leading-loose">
+          I am a full stack developer mainly using Java & JavaScript, and
+          working in agile development environment.
         </p>
 
         <br />
 
-        <p className=" text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          ratione quisquam facere asperiores expedita reprehenderit! Facere
-          neque eveniet totam aliquam? Est tempore, fugiat ducimus ut rem,
-          mollitia quaerat nulla minus blanditiis beatae eius fugit unde
-          voluptatibus itaque dolore dolor assumenda neque tenetur. Architecto
-          dolor at minus quo amet facere iusto?
+        <p className=" text-xl mt-20 leading-loose">
+          My specialties include troubleshooting, fast learning, Object-oriented
+          programming (OOP), microservices architecture, SOAP/REST API web
+          services, Event-Driven designs, and Model View Controller (MVC)
+          methods of organizing code. So far I have acquired experience in Java,
+          Spring Boot, Hibernate, JPA, JUnit, Selenium, SQL, JavaScript, Vue.js,
+          HTML, CSS, and docker. Also, I've been studying React.js, Node.js, and
+          AWS cloud computing as I'm enthusiastic to learn more techniques and
+          frameworks to improve my work.
+        </p>
+
+        <br />
+
+        <p className=" text-xl mt-20 leading-loose">
+          I'm also captivated by the potential of AI to generate a new era of
+          innovation. As a recent graduate from the postgraduate program of AI,
+          I have worked on a diverse range of AI projects, from object detection
+          and classification to Natural language processing (NLP) and Retrieval
+          Augmented Generation (RAG).
         </p>
       </div>
     </div>
