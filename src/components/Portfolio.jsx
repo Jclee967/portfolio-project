@@ -1,6 +1,5 @@
 import React from "react";
 import markdownPreview from "../assets/markdown-previewer.png";
-import vueMap from "../assets/vue-map.png";
 import portfolioSite from "../assets/portfolio-site.png";
 import drowsDetection from "../assets/drows-detection.png";
 
@@ -15,12 +14,6 @@ const Portfolio = () => {
       src: portfolioSite,
       demoUrl: "",
       codeUrl: "https://github.com/Jclee967/portfolio-project",
-    },
-    {
-      id: 3,
-      src: vueMap,
-      demoUrl: "",
-      codeUrl: "https://github.com/Jclee967/vue-map-app",
     },
     {
       id: 2,
